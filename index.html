@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Özür Kartı</title>
+    <style>
+        body {
+          text-align: center;
+          font-family: Arial, sans-serif;
+          background-color: #fefefe;
+        }
+        h1 {
+          color: #333;
+        }
+        img {
+          width: 300px;
+          margin: 20px;
+        }
+        .message {
+          font-size: 20px;
+          margin-top: 10px;
+          font-weight: bold;
+          color: #444;
+        }
+        button {
+          background-color: #ff4d4d;
+          color: white;
+          border: none;
+          padding: 10px 15px;
+          margin: 10px;
+          border-radius: 8px;
+          cursor: pointer;
+          font-size: 16px;
+        }
+        button:hover {
+          background-color: #ff1a1a;
+        }
+    </style>
+</head>
+<body>
+<h1>Özür Dilerim 🥺</h1>
+
+<!-- Burada görseli ekliyoruz -->
+<img src="esekk.png" alt="Eşek resmi">
+
+<div class="message" id="msg">Seni üzdüysem affet 💔</div>
+
+<button onclick="customizeMessage()">Mesajı Özelleştir</button>
+<button onclick="saveAsPng()">PNG Olarak Kaydet</button>
+
+<script>
+    function customizeMessage() {
+      const newMsg = prompt("Yeni mesajı gir:");
+      if (newMsg) {
+        document.getElementById("msg").innerText = newMsg;
+      }
+    }
+
+    function saveAsPng() {
+      alert("Bu özellik için ekran görüntüsü alabilirsin 🙂 (HTML’den doğrudan PNG kaydetmek tarayıcıda biraz karmaşık.)");
+    }
+</script>
+</body>
+</html>
